@@ -80,4 +80,3 @@ int _atoi(char *s)
 	}
 	return (retrieved * minus);
 }
-

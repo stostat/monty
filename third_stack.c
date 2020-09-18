@@ -48,4 +48,3 @@ void free_close(stack_t **stack)
 	}
 	fclose(vari.monty_file);
 }
-

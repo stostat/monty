@@ -83,4 +83,3 @@ void _pall(stack_t **stack, unsigned int numline)
 		temp = temp->next;
 	}
 }
-

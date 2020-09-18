@@ -99,4 +99,3 @@ void _add(stack_t **stack, unsigned int numline)
 	aux->prev = NULL;
 	*stack = aux;
 }
-

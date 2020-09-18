@@ -42,4 +42,3 @@ int main(int ac, char *av[])
 	free_close(&stack);
 	exit(EXIT_SUCCESS);
 }
-
