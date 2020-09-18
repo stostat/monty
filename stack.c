@@ -84,19 +84,3 @@ void _pall(stack_t **stack, unsigned int numline)
 	}
 }
 
-/**
- * _pint - prints items on top of stack
- * @stack: node structure
- * @numline: line number
- * Return: void
- */
-void _pint(stack_t **stack, unsigned int numline)
-{
-	if (!*stack)
-	{
-		dprintf(2, "L%u: can't pint, stack empty\n", numline);
-		free_tokens(vari.token);
-		exit(EXIT_FAILURE);
-	}
-	printf("%d\n", (*stack)->n);
-}

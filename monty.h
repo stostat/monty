@@ -69,3 +69,4 @@ void _pint(stack_t **stack, unsigned int numline);
 void _pall(stack_t **stack, unsigned int numline);
 
 #endif
+

@@ -100,34 +100,3 @@ void _add(stack_t **stack, unsigned int numline)
 	*stack = aux;
 }
 
-/**
- * _nop - does nothing
- * @stack: node structure
- * @numline: line number
- * Return: void
- */
-void _nop(stack_t **stack, unsigned int numline)
-{
-	(void)**stack;
-	(void)numline;
-}
-/**
- * free_close - closes file, deletes stack
- * @stack: node structure
- * Return: Nothing
- */
-void free_close(stack_t **stack)
-{
-	stack_t *tmp = *stack;
-
-	if (*stack)
-	{
-		while (*stack)
-		{
-			*stack = (*stack)->next;
-			free(tmp);
-			tmp = *stack;
-		}
-	}
-	fclose(vari.monty_file);
-}
