@@ -74,8 +74,8 @@ void _push(stack_t **stack, unsigned int numline)
  */
 void _pall(stack_t **stack, unsigned int numline)
 {
-	(void)numline;
 	stack_t *temp = *stack;
+	(void)numline;
 
 	while (temp)
 	{
