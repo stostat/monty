@@ -55,6 +55,7 @@ void _push(stack_t **stack, unsigned int numline)
 	if (!vari.top)
 	{
 		dprintf(2, "Error: malloc failed\n");
+		free_tokens(vari.token);
 		exit(EXIT_FAILURE);
 	}
 

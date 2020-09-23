@@ -19,7 +19,7 @@ int main(int ac, char *av[])
 	if (ac != 2)
 	{
 		dprintf(2, "USAGE: monty file\n");
-		return (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	if (ismonty(av[1]) == 0)
 	{
