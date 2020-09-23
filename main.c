@@ -34,7 +34,7 @@ int main(int ac, char *av[])
 		check_monty(vari.token, i);
 		i++;
 	}
-	//free(line);
+	free(line);
 	free_close(&stack);
 	exit(EXIT_SUCCESS);
 }
