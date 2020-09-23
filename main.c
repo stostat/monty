@@ -21,11 +21,6 @@ int main(int ac, char *av[])
 		dprintf(2, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	if (ismonty(av[1]) == 0)
-	{
-		dprintf(2, "Error: Can't open file %s %s", av[1], "\n");
-		exit(EXIT_FAILURE);
-	}
 	vari.monty_file = fopen(av[1], "r");
 	if (!vari.monty_file)
 	{
