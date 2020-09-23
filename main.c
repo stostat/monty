@@ -21,6 +21,7 @@ int main(int ac, char *av[])
 		dprintf(2, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
+	
 	vari.monty_file = fopen(av[1], "r");
 	if (!vari.monty_file)
 	{
@@ -33,7 +34,7 @@ int main(int ac, char *av[])
 		check_monty(vari.token, i);
 		i++;
 	}
-	free(line);
+	//free(line);
 	free_close(&stack);
 	exit(EXIT_SUCCESS);
 }
